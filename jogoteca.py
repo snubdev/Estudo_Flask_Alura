@@ -7,6 +7,7 @@ class Jogo():
         self.categoria=categoria
         self.console=console
 
+
 jogo1 = Jogo('Tetris', 'Puzzle', 'Ataria')
 jogo2 = Jogo('God of War', 'Rack n Slash', 'PS2')
 jogo3 = Jogo('Mortal Kombat', 'Luta', 'PS2')
@@ -25,6 +26,7 @@ def index():
 @app.route('/novo')
 def novo():
     return render_template('novo.html', titulo='Novo jogo')
+
 
 @app.route('/criar', methods=['POST',])
 def criar():
