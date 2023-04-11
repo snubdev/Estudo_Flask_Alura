@@ -3,6 +3,7 @@ from flask import Flask, render_template
 # Iniciar o variavel do projeto
 app = Flask(__name__)
 
+
 # Criar um nova rota
 @app.route('/inicio')
 def ola():
